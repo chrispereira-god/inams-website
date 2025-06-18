@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Stethoscope } from 'lucide-react';
@@ -6,29 +6,27 @@ import { Stethoscope } from 'lucide-react';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const { login, error: authError, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/admin');
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
     setLoading(true);
 
     try {
-      const success = await login(email, password);
-      if (success) {
-        navigate('/admin');
-      } else {
-        setError('Invalid email or password');
-        setPassword(''); // Clear only password on failed attempt
-      }
+      await login(email, password);
     } catch (error) {
-      setError('An error occurred during login');
-      setPassword(''); // Clear only password on error
+      console.error('Login submission error:', error);
     } finally {
       setLoading(false);
+      setPassword(''); // Clear password on any attempt
     }
   };
 
@@ -50,9 +48,9 @@ const Login = () => {
         </div>
         
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          {error && (
+          {authError && (
             <div className="bg-red-50 text-red-500 p-3 rounded-lg text-sm text-center">
-              {error}
+              {authError}
             </div>
           )}
           
