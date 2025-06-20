@@ -147,7 +147,7 @@ const Home = () => {
                 </h2>
                 
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  Continuing Professional Development (CPD) is the process of maintaining and enhancing the knowledge, skills, and experience needed to deliver high-quality healthcare. At INAMS, we believe CPD is essential for empowering medical professionals and students to stay up-to-date with advancements, improve patient care, and grow confidently in their careers.
                 </p>
               </div>
               

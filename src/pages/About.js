@@ -81,7 +81,9 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">About Us</h1>
         <p className="text-lg text-gray-700 mb-16 max-w-3xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          The International Network of AI in Medical Science (INAMS) was founded on February 3, 2024, by Rushikesh Rajesh Patil along with Yash Pradeep Dhage & Chris Moris Pereira.
+INAMS is a pioneering organization dedicated to advancing Artificial Intelligence (AI) in medicine, fostering a global community of medical and technology professionals. By promoting interdisciplinary collaboration, research, and innovation, INAMS is shaping the future of healthcare through AI-driven solutions.
+
         </p>
 
         {/* Vision, Mission, Goals Section */}
@@ -95,7 +97,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Vision</h2>
                 <p className="text-gray-700">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  Our vision is to be a global leader in AI-driven healthcare, promoting innovation, ethical use, and improved patient outcomes through collaboration between medicine and technology.
                 </p>
               </div>
             </div>
@@ -108,7 +110,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Mission</h2>
                 <p className="text-gray-700">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                   INAMS aims to transform healthcare and medical education by responsibly integrating AI. We foster interdisciplinary collaboration through events, research, and expert-led initiatives.
                 </p>
               </div>
             </div>
@@ -121,7 +123,7 @@ const About = () => {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Goals</h2>
                 <p className="text-gray-700">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  We organize events and publish research to promote AI in medicine, build global networks, and support innovations that enhance diagnostics, clinical efficiency, and education.
                 </p>
               </div>
             </div>

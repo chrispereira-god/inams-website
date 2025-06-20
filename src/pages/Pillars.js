@@ -5,19 +5,19 @@ const Pillars = () => {
   const pillars = [
     {
       title: "Department of AI",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description: "The Department of AI at INAMS is where medicine meets machine intelligence. We explore the transformative role of AI in healthcare — from diagnostics and medical imaging to predictive analytics and digital health tools. Our goal is to equip students and professionals with the skills and knowledge to innovate responsibly, leveraging AI to solve real-world medical challenges. - We don’t just study AI — we apply it to save lives.",
       icon: <Brain className="w-8 h-8 text-blue-600" />,
       image: "https://source.unsplash.com/random/800x400/?artificial-intelligence"
     },
     {
       title: "Department of Medicine",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description: "Rooted in evidence-based clinical science, the Department of Medicine focuses on enhancing medical understanding through interactive education, hands-on training, and multidisciplinary collaboration. From anatomy to pathology, we promote deep learning that integrates traditional knowledge with modern innovation — preparing students for a future where medicine is both human and high-tech. - Preserving the art of healing while embracing the science of progress.",
       icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
       image: "https://source.unsplash.com/random/800x400/?medicine"
     },
     {
       title: "Research and Development",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      description: "The R&D wing of INAMS is the heartbeat of innovation. Here, ideas turn into impact. We foster a culture of scientific curiosity, mentoring students in high-quality research, systematic reviews, AI-integrated projects, and clinical innovation. Whether it’s publishing, prototyping, or problem-solving, our focus is on pushing the boundaries of what’s possible in medicine and technology. - From questions to discoveries — we build the future of healthcare through research.",
       icon: <FlaskConical className="w-8 h-8 text-blue-600" />,
       image: "https://source.unsplash.com/random/800x400/?research-lab"
     }
@@ -28,7 +28,7 @@ const Pillars = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">Core Pillars of INAMS</h1>
         <p className="text-lg text-gray-700 mb-16 max-w-3xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          At INAMS, our mission is to empower the next generation of medical professionals and innovators by integrating artificial intelligence, cutting-edge medical science, and research excellence. Our structure is built on three foundational pillars that drive all our initiatives:
         </p>
 
         <div className="space-y-16">
