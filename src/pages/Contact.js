@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle, Instagram } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import { submitContact } from '../services/contactService';
 
@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
           <p className="text-xl text-gray-700">
-            Get in touch with us for any inquiries about our programs and services
+          Thank you for your interest in INAMS. Whether you're representing an organization, exploring collaboration opportunities, or seeking information about our initiatives, we're here to connect. Please reach out to us through the appropriate channel below:
           </p>
         </div>
 
@@ -54,54 +54,56 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Details</h2>
               <div className="space-y-6">
+                {/* Email */}
                 <div className="flex items-start">
                   <div className="bg-blue-100 rounded-lg p-3">
                     <Mail className="w-6 h-6 text-blue-600" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">info@inams.com</p>
-                    <p className="text-gray-600">support@inams.com</p>
+                    <p className="text-gray-600 text-sm mt-1">For partnerships & institutional inquiries:</p>
+                    <a href="mailto:inams.health@gmail.com" className="text-blue-600 hover:underline">inams.health@gmail.com</a>
+                    <p className="text-gray-600 text-sm mt-3">For events, workshops, and collaborations:</p>
+                    <a href="mailto:inams.collab@gmail.com" className="text-blue-600 hover:underline">inams.collab@gmail.com</a>
                   </div>
                 </div>
 
+                {/* WhatsApp */}
                 <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-lg p-3">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                  <div className="bg-green-100 rounded-lg p-3">
+                    <MessageCircle className="w-6 h-6 text-green-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 765-4321</p>
+                    <h3 className="text-lg font-semibold text-gray-900">WhatsApp</h3>
+                    <p className="text-gray-600">Direct Contact: +995 511 232 446</p>
+                    <a href="https://chat.whatsapp.com/Gbr8p0Bta8k2SrgC7KxIJy" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">Join our WhatsApp Community</a>
                   </div>
                 </div>
 
+                {/* Instagram */}
                 <div className="flex items-start">
-                  <div className="bg-blue-100 rounded-lg p-3">
-                    <MapPin className="w-6 h-6 text-blue-600" />
+                  <div className="bg-pink-100 rounded-lg p-3">
+                    <Instagram className="w-6 h-6 text-pink-600" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">Location</h3>
-                    <p className="text-gray-600">
-                      123 Medical Center Drive<br />
-                      Suite 456<br />
-                      Healthcare City, HC 12345
-                    </p>
+                    <h3 className="text-lg font-semibold text-gray-900">Instagram</h3>
+                    <p className="text-gray-600">Follow us for the latest news and insights.</p>
+                    <a href="https://instagram.com/inams.health" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">@inams.health</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
+            {/* <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
               <h2 className="text-2xl font-bold mb-4">Office Hours</h2>
               <div className="space-y-2">
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p>Saturday: 9:00 AM - 1:00 PM</p>
                 <p>Sunday: Closed</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

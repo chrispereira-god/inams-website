@@ -10,6 +10,8 @@ import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Contact from './pages/Contact';
 import INAMSLandingPage from './pages/Home';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Gallery from './pages/Gallery';
 import Admin from './admin/Admin';
 import Login from './admin/Login';
 import { AuthProvider } from './contexts/AuthContext';
@@ -45,7 +47,9 @@ const App = () => {
             <Route path="/events/:id" element={<EventDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </AppLayout>
       )}

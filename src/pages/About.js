@@ -3,76 +3,64 @@ import { Target, Flag, Trophy } from 'lucide-react';
 
 const About = () => {
   const founders = [
+    
     {
-      name: "Dr. John Smith",
-      role: "Founder & CEO",
-      image: "https://source.unsplash.com/random/400x400/?doctor,man"
+      name: "Rushikesh Rajesh Patil",
+      role: "Founder",
+      image: require('../assets/founder-rushikesh.jpg')
     },
     {
-      name: "Dr. Sarah Wilson",
-      role: "Co-Founder & Medical Director",
-      image: "https://source.unsplash.com/random/400x400/?doctor,woman"
+      name: "Chris Moris Pereira",
+      role: "Founder",
+      image: require('../assets/founder-chris.jpg')
     },
     {
-      name: "Dr. Michael Chen",
-      role: "Co-Founder & Research Director",
-      image: "https://source.unsplash.com/random/400x400/?doctor,asian"
+      name: "Yash Pradeep Dhage",
+      role: "Founder",
+      image: require('../assets/founder-yash.jpg')
     }
   ];
 
   const esteemedPanel = [
     {
-      name: "Dr. Emily Brown",
-      role: "Chief Medical Officer",
-      image: "https://source.unsplash.com/random/200x200/?doctor,1"
+      name: "Mr. Amey Talekar",
+      role: "Manufacturing Manager at Argon Medical Devices",
+      degree: "M.S. in Engineering Management, Northeastern University, Boston",
+      image: require('../assets/panel-amey.jpg')
     },
     {
-      name: "Dr. James Wilson",
-      role: "Head of Research",
-      image: "https://source.unsplash.com/random/200x200/?doctor,2"
-    },
-    {
-      name: "Dr. Maria Garcia",
-      role: "Director of Education",
-      image: "https://source.unsplash.com/random/200x200/?doctor,3"
-    },
-    {
-      name: "Dr. David Lee",
-      role: "Innovation Lead",
-      image: "https://source.unsplash.com/random/200x200/?doctor,4"
-    },
-    {
-      name: "Dr. Rachel Green",
-      role: "Clinical Director",
-      image: "https://source.unsplash.com/random/200x200/?doctor,5"
+      name: "Dr. Rajesh Patil",
+      role: "Professor",
+      degree: "B.E. Electronics; M.Tech Electronics, IIT Powai; Ph.D, NIT Jaipur",
+      image: require('../assets/panel-rajesh.jpg')
     }
   ];
 
   const executiveBoard = [
     {
-      name: "Dr. Robert Taylor",
-      role: "Chairman",
-      image: "https://source.unsplash.com/random/200x200/?executive,1"
+      name: "Mrunal Mahadeo Sule",
+      role: "Executive",
+      image: require('../assets/executive-mrunal.jpg')
     },
     {
-      name: "Dr. Lisa Anderson",
-      role: "Vice Chairman",
-      image: "https://source.unsplash.com/random/200x200/?executive,2"
+      name: "Aishwarya Shelke",
+      role: "Executive",
+      image: require('../assets/executive-aishwarya.jpg')
     },
     {
-      name: "Dr. Thomas Wright",
-      role: "Secretary",
-      image: "https://source.unsplash.com/random/200x200/?executive,3"
+      name: "Prerna Dhamale",
+      role: "Executive",
+      image: require('../assets/executive-prerna.jpg')
     },
     {
-      name: "Dr. Patricia Martinez",
-      role: "Treasurer",
-      image: "https://source.unsplash.com/random/200x200/?executive,4"
+      name: "Kruthika Gowda",
+      role: "Executive",
+      image: require('../assets/executive-kruthika.jpg')
     },
     {
-      name: "Dr. Kevin Johnson",
-      role: "Member",
-      image: "https://source.unsplash.com/random/200x200/?executive,5"
+      name: "Manoj kumar uppar",
+      role: "Executive",
+      image: require('../assets/executive-manoj.jpg')
     }
   ];
 
@@ -129,10 +117,13 @@ INAMS is a pioneering organization dedicated to advancing Artificial Intelligenc
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            {/* Add an image or illustration here */}
-            <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-xl"></div>
-          </div>
+          <div className="bg-white rounded-2xl shadow-xl inline-block">
+  <img 
+    src={require('../assets/about_us_banner.png')} 
+    alt="About Us Banner" 
+    className="block w-full h-full rounded-2xl object-cover"
+  />
+</div>
         </div>
 
         {/* Founders Section */}
@@ -158,18 +149,19 @@ INAMS is a pioneering organization dedicated to advancing Artificial Intelligenc
         {/* Our Esteemed Panel Section */}
         <div className="mb-24">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Esteemed Panel</h2>
-          <div className="flex justify-center flex-wrap gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {esteemedPanel.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 mx-auto">
+              <div key={index} className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center w-80 max-w-full">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-100 shadow">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
-                <p className="text-sm text-blue-600">{member.role}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1 text-center">{member.name}</h3>
+                <p className="text-blue-700 font-medium text-center mb-2">{member.role}</p>
+                <p className="text-gray-600 text-center text-sm">{member.degree}</p>
               </div>
             ))}
           </div>

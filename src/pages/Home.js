@@ -25,30 +25,36 @@ const Home = () => {
 
   const testimonials = [
     {
-      text: "INAMS provided exceptional CPD training that enhanced my medical knowledge and clinical skills significantly. The quality of instruction was outstanding.",
-      author: "Dr. Sarah Johnson",
-      role: "Cardiologist",
+      text: "Firstly when we got the goodies at the start of the session. It felt really amazing and appreciative. And then next when our trainers were personally teaching us suturing with great attention and splendid attitude. Overall every part of the workshop was so engaging and worth every penny I swear. The knowledge and practice we got was far more valuable than any material things and for that I am truly grateful.",
+      author: "InClosure",
+      role: " Participant",
       rating: 5,
       image: "👩‍⚕️"
     },
     {
-      text: "The quality of education and professional development opportunities at INAMS is truly outstanding. Highly recommended for medical professionals.",
-      author: "Dr. Michael Chen",
-      role: "Emergency Medicine",
+      text: "The INAMS workshop was an amazing experience! Learned useful suturing techniques and got a cute kit to practice at home. Thank you INAMS for the amazing opportunity!",
+      author: "Ilona Dzotsenidze",
+      role: "Medical Student, Tbilisi Medical Academy",
       rating: 5,
       image: "👨‍⚕️"
     },
     {
-      text: "Highly recommend INAMS for any healthcare professional looking to advance their career and knowledge in modern medical practices.",
-      author: "Dr. Priya Sharma",
-      role: "Internal Medicine",
+      text: "We attended the INAMS suturing workshop and learned 12 techniques, practiced on real skin, and learned anesthesia injection and waste disposal. Trainers were supportive and interactive. Grateful for this experience!",
+      author: "Sanjana, Kannika, Varshita",
+      role: "Medical Students, Georgian American University",
       rating: 5,
       image: "👩‍⚕️"
     }
   ];
 
-  const partners = [
-    "Medical University", "Health Institute", "Research Center", "Hospital Network", "Medical Association"
+  const partnerLogos = [
+    { name: "MedHack", src: require('../assets/partners/medhack_logo.png') },
+    { name: "GAU", src: require('../assets/partners/gau-logo.png') },
+    { name: "IHI", src: require('../assets/partners/ihi-logo.png') },
+    { name: "Grigol", src: require('../assets/partners/grigol_logo.png') },
+    { name: "ASRU", src: require('../assets/partners/asru_logo.png') },
+    { name: "MV", src: require('../assets/partners/mv_logo.png') },
+    { name: "UG", src: require('../assets/partners/ug_logo.png') }
   ];
 
   const nextSlide = () => {
@@ -240,14 +246,15 @@ const Home = () => {
       {/* Partners Section */}
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Our Trusted Partners</h2>
-          <div className="flex justify-center items-center space-x-12 flex-wrap gap-8">
-            {partners.map((partner, index) => (
-              <div key={index} className="group">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center hover:from-blue-200 hover:to-blue-300 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl">
-                  <span className="text-xs text-blue-800 text-center font-semibold px-2">{partner}</span>
-                </div>
-              </div>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Partnered With</h2>
+          <div className="flex justify-center items-center flex-wrap gap-x-16 gap-y-12">
+            {partnerLogos.map((logo, index) => (
+              <img
+                key={index}
+                src={logo.src}
+                alt={`${logo.name} logo`}
+                className="h-12 lg:h-14 object-contain transition-transform duration-300 transform hover:scale-110"
+              />
             ))}
           </div>
         </div>

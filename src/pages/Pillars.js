@@ -7,19 +7,19 @@ const Pillars = () => {
       title: "Department of AI",
       description: "The Department of AI at INAMS is where medicine meets machine intelligence. We explore the transformative role of AI in healthcare — from diagnostics and medical imaging to predictive analytics and digital health tools. Our goal is to equip students and professionals with the skills and knowledge to innovate responsibly, leveraging AI to solve real-world medical challenges. - We don’t just study AI — we apply it to save lives.",
       icon: <Brain className="w-8 h-8 text-blue-600" />,
-      image: "https://source.unsplash.com/random/800x400/?artificial-intelligence"
+      image: require('../assets/inams_ai.jpg')
     },
     {
       title: "Department of Medicine",
       description: "Rooted in evidence-based clinical science, the Department of Medicine focuses on enhancing medical understanding through interactive education, hands-on training, and multidisciplinary collaboration. From anatomy to pathology, we promote deep learning that integrates traditional knowledge with modern innovation — preparing students for a future where medicine is both human and high-tech. - Preserving the art of healing while embracing the science of progress.",
       icon: <Stethoscope className="w-8 h-8 text-blue-600" />,
-      image: "https://source.unsplash.com/random/800x400/?medicine"
+      image: require('../assets/inams_med.jpg')
     },
     {
       title: "Research and Development",
       description: "The R&D wing of INAMS is the heartbeat of innovation. Here, ideas turn into impact. We foster a culture of scientific curiosity, mentoring students in high-quality research, systematic reviews, AI-integrated projects, and clinical innovation. Whether it’s publishing, prototyping, or problem-solving, our focus is on pushing the boundaries of what’s possible in medicine and technology. - From questions to discoveries — we build the future of healthcare through research.",
       icon: <FlaskConical className="w-8 h-8 text-blue-600" />,
-      image: "https://source.unsplash.com/random/800x400/?research-lab"
+      image: require('../assets/inams_rnd.jpg')
     }
   ];
 

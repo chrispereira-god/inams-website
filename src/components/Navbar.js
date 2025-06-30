@@ -16,6 +16,7 @@ const Navbar = () => {
     { path: '/pillars', label: 'Pillars of INAMS' },
     { path: '/events', label: 'Events' },
     { path: '/blog', label: 'Blog' },
+    { path: '/gallery', label: 'Gallery' },
     { path: '/contact', label: 'Contact us' },
   ];
 
@@ -48,10 +49,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-xl text-sm font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">Coming Soon</button>
-          </div>
-
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -80,9 +77,6 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="flex px-3 py-3">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold w-full">Coming Soon</button>
-            </div>
           </div>
         </div>
       )}

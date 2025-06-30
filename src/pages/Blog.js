@@ -130,7 +130,13 @@ const Blog = () => {
 
         {blogs.length === 0 && !loading && !error && (
           <div className="text-center py-12">
-            <p className="text-xl text-gray-600">No blog posts available at the moment.</p>
+            <p className="text-xl text-gray-600">Coming Soon!
+
+Our blog section is currently under construction.
+Stay tuned for powerful stories, expert insights, and the latest updates at the intersection of AI and Medical Sciences.
+
+We’re launching soon — and it’ll be worth the wait!
+</p>
           </div>
         )}
 
