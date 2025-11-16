@@ -15,20 +15,7 @@ const About = () => {
     }
   ];
 
-  // const esteemedPanel = [
-  //   {
-  //     name: "Mr. Amey Talekar",
-  //     role: "Manufacturing Manager at Argon Medical Devices",
-  //     degree: "M.S. in Engineering Management, Northeastern University, Boston",
-  //     image: require('../assets/panel-amey.jpg')
-  //   },
-  //   {
-  //     name: "Dr. Rajesh Patil",
-  //     role: "Professor",
-  //     degree: "B.E. Electronics; M.Tech Electronics, IIT Powai; Ph.D, NIT Jaipur",
-  //     image: require('../assets/panel-rajesh.jpg')
-  //   }
-  // ];
+
 
   const executiveBoard = [
     {
@@ -140,26 +127,7 @@ INAMS is a pioneering organization dedicated to advancing Artificial Intelligenc
           </div>
         </div>
 
-        {/* Our Esteemed Panel Section */}
-        // <div className="mb-24">
-        //   <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Esteemed Panel</h2>
-        //   <div className="flex flex-wrap justify-center gap-8">
-        //     {esteemedPanel.map((member, index) => (
-        //       <div key={index} className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center w-80 max-w-full">
-        //         <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-100 shadow">
-        //           <img
-        //             src={member.image}
-        //             alt={member.name}
-        //             className="w-full h-full object-cover"
-        //           />
-        //         </div>
-        //         <h3 className="text-xl font-bold text-gray-900 mb-1 text-center">{member.name}</h3>
-        //         <p className="text-blue-700 font-medium text-center mb-2">{member.role}</p>
-        //         <p className="text-gray-600 text-center text-sm">{member.degree}</p>
-        //       </div>
-        //     ))}
-        //   </div>
-        // </div>
+        
 
         {/* Executive Boards Section */}
         <div>
